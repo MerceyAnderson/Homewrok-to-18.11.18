@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Product page
+    </title>
+
+  </head>
+  <body>
+    <% if products.nil? %>
+      <h1>Your product not found!</h1>
+    <% else %>
+      <p>Title : <%= products[:title] %></p>
+      <p>Description : <%= products[:about] %></p>
+      <p>Price : <%= products[:price] %>$</p>
+    <% end %>
+    <a href="/products">Back to product list</a>
+  </body>
+</html>
